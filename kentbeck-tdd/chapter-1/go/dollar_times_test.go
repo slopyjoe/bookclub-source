@@ -1,14 +1,6 @@
-package main
+package dollar
 
 import "testing"
-
-type Dollar struct {
-  amount int
-}
-
-func (dollar Dollar) Times(by int) int {
-   return dollar.amount  *  by
-}
 
 func TestDollar_Times(t *testing.T) {
   dollar := Dollar{2}
